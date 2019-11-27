@@ -4,10 +4,12 @@ package language
 type Tag struct {
 	// MUST contain at least one each
 	Type        string
-	Tag         string
-	Subtag      string
 	Description []string
 	Added       string
+
+	// MUST contain one of them.
+	Tag    string
+	Subtag string
 
 	// MAY also contain the following fields
 	Deprecated     string
